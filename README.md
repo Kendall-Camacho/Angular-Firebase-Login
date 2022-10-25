@@ -16,5 +16,4 @@ Learn to create full Firebase authentication system with Angular using AngularFi
 Run `npm install` to install all the required dependencies
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## ----------------------------------------------------------------------------------------------
 [Lawrent & Kendall Website](https://futuretechcr.com)
