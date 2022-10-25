@@ -9,6 +9,15 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 
+/*
+ ____   ____          ________       ________               .___
+/_   | /_   |         \_____  \     /  _____/    ____     __| _/
+ |   |  |   |  ______  /  ____/    /   \  ___   /  _ \   / __ | 
+ |   |  |   | /_____/ /       \    \    \_\  \ (  <_> ) / /_/ | 
+ |___|  |___|         \_______ \    \______  /  \____/  \____ | 
+                              \/           \/                \/ 
+*/
+
 // components
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
@@ -22,7 +31,6 @@ import { AppRoutingModule } from './app-routing.module';
 // service
 import { AuthService } from './shared/services/auth.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +42,7 @@ import { AuthService } from './shared/services/auth.service';
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase, 'angularlogin-1e743'),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
@@ -44,5 +52,6 @@ import { AuthService } from './shared/services/auth.service';
   providers: [AuthService],
   bootstrap: [AppComponent],
 })
-
-export class AppModule {}
+export class AppModule {
+    // Lawrent & Kendall <3 
+}

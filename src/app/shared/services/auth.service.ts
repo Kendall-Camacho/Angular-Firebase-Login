@@ -32,6 +32,11 @@ export class AuthService {
         JSON.parse(localStorage.getItem('user')!);
       }
     });
+
+    // If user is logged in, return to dashboard
+    if (this.isLoggedIn) {
+      this.router.navigate(['dashboard']);
+    }
   }
 
   // Sign in with email/password
